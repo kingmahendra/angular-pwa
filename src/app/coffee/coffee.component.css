@@ -1,0 +1,14 @@
+mat-card {
+    margin: 20px;
+}
+mat-form-field {
+    width: 100%;
+}
+
+mat-card-title {
+    font-size: larger;
+}
+
+mat-slider {
+    width: 90%;
+}
