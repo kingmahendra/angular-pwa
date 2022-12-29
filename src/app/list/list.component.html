@@ -5,9 +5,9 @@
     </mat-card-header>
 
     <mat-card-actions>
-        <button mat-button><mat-icon>map</mat-icon></button>
-        <button mat-button><mat-icon>share</mat-icon></button>
-        <button mat-button><mat-icon>list</mat-icon></button>
+        <button mat-button (click)="toMap(coffee)"><mat-icon>map</mat-icon></button>
+        <button mat-button (click)="share(coffee)"><mat-icon>share</mat-icon></button>
+        <button mat-button (click)="goDetails(coffee)"><mat-icon>list</mat-icon></button>
     </mat-card-actions>
 
 </mat-card>

@@ -14,24 +14,29 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import 'hammerjs';
 import { ListComponent } from './list/list.component';
 import { CoffeeComponent } from './coffee/coffee.component';
-import { Routes, RouterModule} from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
   {
-    path: '', component: ListComponent
+    path: '',
+    component: ListComponent,
   },
   {
-    path: 'coffee', component: CoffeeComponent
+    path: 'coffee',
+    component: CoffeeComponent,
   },
   {
-    path: 'coffee/:id', component: CoffeeComponent
-  }
-]
+    path: 'coffee/:id',
+    component: CoffeeComponent,
+  },
+];
 
 @NgModule({
   declarations: [AppComponent, ListComponent, CoffeeComponent],
@@ -40,6 +45,7 @@ const routes: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
+    HttpClientModule,
     MatButtonModule,
     MatIconModule,
     MatInputModule,
@@ -48,6 +54,7 @@ const routes: Routes = [
     MatToolbarModule,
     MatCardModule,
     MatSlideToggleModule,
+    MatSnackBarModule,
   ],
   providers: [GeolocationService, DataService],
   bootstrap: [AppComponent],

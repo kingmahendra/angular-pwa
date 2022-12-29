@@ -3,6 +3,7 @@ import { TastingRating } from "./TastingRating";
 
 export class Coffee {
     // properties
+    _id: string| undefined;
     type: string | undefined;
     rating: number | undefined;
     notes: string | undefined;
